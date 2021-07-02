@@ -1,0 +1,239 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+
+}
+.tip{
+    display: none;
+    text-align: justify;
+    
+}
+/* .tipBtn{
+    box-shadow: 2px 3px 2px black;
+    padding: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tipBtn:hover{
+    color: white;
+    background-color: rgb(3, 45, 184);
+} */
+        header{
+            width: 100%;
+            background-color: rgba(29,161,242,1.00);
+            text-align: center;
+            padding: 10px;
+        }
+        .projectTitleList{
+            background-color:rgba(29,161,242,1.00) ;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+            padding: 10px;
+            align-content: center;
+        }
+        .projectTitle{
+            width: fit-content;
+            color: rgb(80, 80, 80);
+            text-align: center;
+            height: 50px;
+            padding: 15px 5px;
+            margin: 2px;
+            cursor: pointer;
+            background-color: rgb(149, 149, 211);
+        }
+        .clickedTite{
+            background-color: rgb(56, 56, 226);
+            color: white;
+        }
+        .projects{
+            /* display: flex;
+            flex-wrap: wrap; */
+        }
+        .eachProject{
+            width: 300px;
+            background-color: rgba(29,161,242,1.00);
+            padding: 10px;
+            margin: 10px auto;
+            display: none;
+        }
+        .currentProject{
+            display: block;
+        }
+        .palindromeCheck{
+            height: 100px;
+            overflow: auto;
+            font-size: 30px;
+        }
+        
+        .telephoneCheck{
+            margin: 20px 0;
+            font-size: 20px;
+            height: 30px;
+        }
+        
+        #passwordGeneratorInput{
+            width: 80%;
+            /* background-color: red; */
+        }
+        #passGenLength{
+            width: 50px;
+        }
+
+.generalInput{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px black;
+    height: 30px;
+    border: none;
+    font-size:15px;
+}
+.generalBtn{
+    box-shadow: 2px 3px 2px black;
+    padding: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.generalBtn:hover{
+    color: white;
+    background-color: rgb(3, 45, 184);
+}
+
+
+
+/* Password Generator */
+.passLable{
+    margin: 10px ;
+    font-size: 20px;
+}
+.passLable input{
+float: right;
+width: 20px;
+height: 20px;
+}
+#passGenLength{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px black;
+    height: 25px;
+    border: none;
+    font-size:15px;
+}
+.copyBtn{
+    width: 18%;
+}
+.copied{
+    background-color: green;
+    color: white;    
+}
+.copied:hover{
+    background-color: green;
+
+}
+#passwordGeneratorBtn{
+    display: block;
+    margin: 20px auto;
+    /* background-color: red; */
+}
+/* Roman Numeral Converter
+ */
+ .romanCheck{
+     margin: 20px 0;
+     height: 30px;
+ }
+.romanInput{
+    width: 30%;
+}
+.romanBtn{
+    margin: 0 30px;
+}
+/* caesars */
+.caesars{
+    /* height: 400px; */
+}
+.caesarsCheck{
+    height: 150px;
+    overflow-y: auto;
+    margin: 10px;
+    /* width: 100px; */
+    /* background-color: red; */
+    padding: 10px;
+    text-align: justify;
+    word-wrap: break-word;
+    
+}
+.caesarsCheck p {
+    /* width: 10px; */
+    /* color: white; */
+
+}
+/* telephone */
+.telephone{
+    
+    /* height: 300px; */
+}
+/* Cash Register */
+.moneyInput{
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 2px black;
+    height: 30px;
+    border: none;
+    font-size:15px;
+    width: 50px;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    /* display: flex; flex-wrap: wrap; */
+}
+.cashRegister label{
+    position: relative;
+    margin:20px 10px;
+    display: block;
+    /* background-color: red; */
+    /* float: right; */
+    width: 80%;
+    /* height: 100px; */
+    appearance: none;
+}
+.cashRegister{
+    /* width: 100%; */
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+.moneyType{
+    /* width: 50%; */
+    background-color: red;
+}
+.chechoutTools{
+    /* width: 50%; */
+    /* float: right; */
+}
+.price{
+    background-color: red;
+}
+.cash{
+    background-color: green;
+}
+.cashBtn{
+    margin: 10px;
+}
+.cashResult{
+    background-color: greenyellow;
+    padding: 20px 10px;
+    margin: 10px;
+    border-radius: 10px;
+}

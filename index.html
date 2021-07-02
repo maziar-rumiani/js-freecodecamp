@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>javascript-algorithms-and-data-structures</title>
+</head>
+<body>
+    <header><h3>javascript-algorithms-and-data-structures</h3></header>
+    <div class="projectTitleList">
+        <div class="projectTitle" name='one'>Palindrome Checker</div>
+        <div class="projectTitle" name='two'>Roman Numeral Converter</div>
+        <div class="projectTitle" name='three'>Caesars Cipher</div>
+        <div class="projectTitle" name='four'>Telephone Number Validator</div>
+        <div class="projectTitle" name='five'>Cash Register</div>
+        <div class="projectTitle" name='six'>Password Generator</div>
+    </div>
+    <div class="projects">
+        <div class="eachProject" id="one">
+            <h4>Palindrome Checker</h4>
+            <input class="palindromeInput generalInput" placeholder="Enter a text" type="text"  >
+            <button class="palindromeBtn generalBtn">Check</button>
+            <div class="palindromeCheck"></div>
+            <button class="tipBtn generalBtn">Show tip</button>
+            <div class="tip">
+                <p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+            </div>
+        </div>
+
+        <div class="eachProject roman" id="two">
+            <h4>Roman Numeral Converter</h4>
+            <label for='romanInput'>Enter a number between 1 - 9999 <br><br><input id="romanInput" class="romanInput generalInput" type="number"  min="1" max="9999" placeholder="Here ..."></label>
+            <button class="romanBtn generalBtn">Convert</button>
+            <br>
+            <br><br>
+            <div class="romanCheck"></div>
+            <button class="tipBtn generalBtn">Show tip</button>
+            <div class="tip">
+                <p>Convert the given number into a roman numeral.</p>
+            </div>
+        </div>
+
+
+        <div class="eachProject caesars" id="three">
+            <h4>Caesars Cipher</h4>
+            <input class="caesarsInput generalInput" placeholder="Enter a text" type="text"  >
+            <button class="caesarsBtn generalBtn">Convert</button>
+            <br><br>
+            <div class="caesarsCheck"></div>
+            <button class="tipBtn generalBtn">Show tip</button>
+            <div class="tip">
+                <p>One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.
+
+                    A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus A ↔ N, B ↔ O and so on.</p>
+            </div>
+        </div>
+        <div class="eachProject telephone" id="four">
+            <h4>Telephone Number Validator</h4>
+            <input class="telephoneInput generalInput" placeholder="Enter a telephone number" type="text"  >
+            <button class="telephoneBtn generalBtn">Check</button>
+            <div class="telephoneCheck"></div>
+            <button class="tipBtn generalBtn">Show tip</button>
+            <div class="tip">
+                <p>The user may fill out the form field any way they choose as long as it has the format of a valid US number. The following are examples of valid formats for US numbers (refer to the tests below for other variants):
+                    <br>
+
+                    555-555-5555 <br>
+                    (555)555-5555 <br>
+                    (555) 555-5555 <br>
+                    555 555 5555 <br>
+                    5555555555 <br>
+                    1 555 555 5555</p>
+            </div>
+        </div>
+        
+        
+        <div class="eachProject cashRegister" id="five">
+            <h4>Cash Register</h4>
+            <label for="PENNY">PENNY
+                <input class='moneyInput' id='PENNY' type="number" value=1.01>
+            </label>
+            <label for="NICKEL">NICKEL            
+                <input class='moneyInput' id='NICKEL' type="number" value=2.05>
+            </label>
+            <label for="DIME">DIME            
+                <input class='moneyInput' id='DIME' type="number" value=3.1>
+            </label>
+            <label for="QUARTER">QUARTER
+                <input class='moneyInput' id='QUARTER' type="number" value=4.25>
+            </label>
+            <label for="ONE">ONE
+                <input class='moneyInput' id='ONE' type="number" value=90>
+            
+            </label>
+            <label for="FIVE">FIVE            
+                <input class='moneyInput' id='FIVE' type="number" value=55>
+            
+            </label>
+            <label for="TEN">TEN
+                <input class='moneyInput' id='TEN' type="number" value=20>
+            
+            </label>
+            <label for="TWENTY">TWENTY            
+                <input class='moneyInput' id='TWENTY' type="number" value=60>
+            
+            </label>
+            <label for="ONEHUNDRED">ONE HUNDRED                
+                <input class='moneyInput' id='ONEHUNDRED' type="number" value=100>
+            </label>
+            <label for="price">price
+                <input class='price moneyInput' type="number" value=19.5>
+            </label>
+            <label for="cash">cash
+                <input class='cash moneyInput' type="number" value=20>
+            </label>
+            <button class="cashBtn generalBtn">Check</button>
+            <div class="cashResult"></div>
+            <button class="tipBtn generalBtn">Show tip</button>
+            <div class="tip">
+                <p>Enter the amount of each money type cash-in-drawer , the price of the products and the cash amount then hit the chech to see the change and the status.</p>
+            </div>
+            
+        </div>
+        
+        <div class="eachProject passwordGenerator" id="six" >
+            <h4>Password Generator</h4>
+            <input id="passwordGeneratorInput" class="generalInput" type="text"  readonly placeholder="Your pass will appear here"> <button id="generalBtn" class="generalBtn copyBtn">copy</button>
+            <div class="passLable">Password length <span><input type="number" id="passGenLength" value="0" min="0" max="100"></span></div>
+            <div class="passLable">include lowercase letters <input type="checkbox" id="passGenUppercase" checked></div>
+            <div class="passLable">include UPPERCASE letters <input type="checkbox" id="passGenLowerCase" checked></div>
+            <div class="passLable">Include Numbers <input type="checkbox" id="passGenNumber" checked></div>
+            <div class="passLable">Include Symbols <input type="checkbox" id="passGenSymbol" checked></div>
+            <button id="passwordGeneratorBtn" class="generalBtn">Generate Password</button>
+            <button class="tipBtn generalBtn">Show tip</button>
+            <div class="tip">
+                <p>Generate a safe password using almost everything.</p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
