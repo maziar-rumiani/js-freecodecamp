@@ -16,18 +16,6 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: justify;
     
 }
-/* .tipBtn{
-    box-shadow: 2px 3px 2px black;
-    padding: 5px;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.tipBtn:hover{
-    color: white;
-    background-color: rgb(3, 45, 184);
-} */
         header{
             width: 100%;
             background-color: rgba(29,161,242,1.00);
@@ -42,7 +30,6 @@ input[type=number]::-webkit-outer-spin-button {
             margin: 5px;
             padding: 10px;
             align-content: center;
-            justify-content:center;
             
         }
         .projectTitle{
